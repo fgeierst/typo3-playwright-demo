@@ -1,0 +1,16 @@
+{
+  "name": "typo3_playwright_demo",
+  "version": "1.0.0",
+  "description": "End-to-end testing with Playwright",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "playwright test"
+  },
+  "keywords": [],
+  "author": "Florian Geierstanger",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.30.0"
+  }
+}

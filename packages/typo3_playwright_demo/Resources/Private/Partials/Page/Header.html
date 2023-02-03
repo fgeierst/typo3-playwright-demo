@@ -1,0 +1,54 @@
+
+<header class="header">
+	<a href="/" {f:if(condition: '{data.uid} == 1', then:'aria-current="page"')}>Homepage</a>
+
+	<nav class="nav">
+		<ul class="nav__list">
+			<f:for each="{mainnavigation}" as="mainnavigationItem">
+							<a href="{mainnavigationItem.link}" target="{mainnavigationItem.target}" title="{mainnavigationItem.title}" {f:if(condition: mainnavigationItem.active, then:'aria-current="page"')}>
+									{mainnavigationItem.title}
+							</a>
+							<f:if condition="{mainnavigationItem.children}">
+									<ul>
+											<f:for each="{mainnavigationItem.children}" as="child">
+													<li class="">
+															<a href="{child.link}" target="{child.target}" title="{child.title}{f:if(condition: child.active, then:'aria-current="page"')} ">
+																	{child.title}
+															</a>
+													</li>
+											</f:for>
+									</ul>
+							</f:if>
+					</li>
+			</f:for>
+		</ul>
+	</nav>
+
+</header>
+
+<f:asset.css identifier="header">
+	.header {
+		display: flex;
+		gap: 1rem;
+		padding-block: 1rem;
+	}
+
+	.header a {
+		text-decoration: none;
+		color: inherit;
+	}
+	
+	.header [aria-current="page"] {
+		text-decoration: underline 3px;
+		text-underline-offset: 4px;
+	}
+
+	.nav ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		display: flex;
+		gap: 1rem;
+	}
+
+</f:asset.css>
