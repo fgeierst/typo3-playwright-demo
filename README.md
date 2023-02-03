@@ -5,7 +5,7 @@ End-to-End Testing for TYPO3 CMS with [Playwright](https://playwright.dev/docs/)
 
 ## Local installation guide
 
-	git clone https://github.com/fgeierst/...
+	git clone https://github.com/fgeierst/typo3-playwright-demo.git
 	cd typo3-playwright-demo
 	ddev start
 	ddev composer install
@@ -21,7 +21,7 @@ Login via [typo3-playwright-demo.ddev.site/](https://typo3-playwright-demo.ddev.
 
 Due to an [incompatibility with Alpine Linux](https://playwright.dev/docs/docker#alpine), we run Playwright outside the DDEV container. This requires [Node](https://nodejs.org/en/download/) to be installed on your machine. 
 
-Editor extensions for [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-playwright.playwright) and [IntelliJ editors](https://plugins.jetbrains.com/plugin/18100-maestro) are recommended.
+Editor extensions for [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-playwright.playwright) or [IntelliJ](https://plugins.jetbrains.com/plugin/18100-maestro) are recommended.
 
 Install headless browsers
 ```shell
