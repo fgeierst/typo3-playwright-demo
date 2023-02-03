@@ -1,6 +1,6 @@
 # TYPO3 Playwright Demo
 
-End-to-End Testing for TYPO3 CMS with [Playwright](https://playwright.dev/docs/).
+End-to-End Testing for TYPO3 CMS with [Playwright](https://playwright.dev/docs/). This demo shows how to test a frontend user login, see [test/login.spec.ts](https://github.com/fgeierst/typo3-playwright-demo/blob/main/tests/login.spec.ts).
 
 
 ## Local installation guide
